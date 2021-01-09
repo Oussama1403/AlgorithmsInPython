@@ -20,10 +20,8 @@ def Trisel(T,n):
     #Parcourir le tableau et réduise sa taille de 1
     for parc in range(n-1,0,-1):
         for i in range(parc):
-            #print("i",T[i])
             if T[i+1] < T[i]:
                 T[i+1],T[i] = T[i],T[i+1]
-            #print(T)      
     return T
 
 n = Saisir()
